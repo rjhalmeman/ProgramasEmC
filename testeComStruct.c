@@ -1,20 +1,23 @@
 #include <stdio.h>
-
-void  main(int argc, char const *argv[])
-{
-	//argc é a quantidade de parâmetros passados pelo usuário
-	//argv são os parâmetros
-	for (int i = 1; i < argc; ++i)
-	{		
-		printf("%s\n", argv[i]);
-	}
-	
-}
-
-#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct Lista {
-    int elemento;
-    struct Lista *prox;
-} TipoCelula;
+	int id;
+	char[50] nome;
+	char[50] telefone;
+	struct Lista *prox;
+} TipoFicha;
+
+
+void  main(int argc, char const *argv[]){
+	
+	TipoFicha ficha;
+
+	ficha.id = 1;
+	ficha.nome="Berola da Silva";
+	ficha.telefone="9970607070";
+
+	printf("%i\n",ficha->id);
+	
+}
+
